@@ -25,7 +25,6 @@ class PlacemarkActivity : AppCompatActivity(), AnkoLogger{
   lateinit var app: MainApp
   val IMAGE_REQUEST = 1
   val LOCATION_REQUEST = 2
-  //var location = Location(52.245696, -7.139102, 15f)
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
