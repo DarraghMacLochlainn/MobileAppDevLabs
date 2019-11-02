@@ -92,6 +92,10 @@ class PlacemarkActivity : AppCompatActivity(), AnkoLogger{
       R.id.item_cancel -> {
         finish()
       }
+      R.id.item_delete -> {
+        app.placemarks.delete(placemark.copy())
+        finish()
+      }
     }
     return super.onOptionsItemSelected(item)
   }
