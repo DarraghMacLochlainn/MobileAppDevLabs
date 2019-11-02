@@ -21,3 +21,5 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+app/src/release/res/values/google_maps_api.xml
+app/src/debug/res/values/google_maps_api.xml
