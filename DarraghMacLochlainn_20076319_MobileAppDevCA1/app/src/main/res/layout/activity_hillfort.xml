@@ -68,17 +68,12 @@
           android:textSize="14sp"/>
 
         <ImageView
-            android:id="@+id/hillfortImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:srcCompat="@mipmap/ic_launcher"/>
-        <ImageView
-            android:id="@+id/hillfortImage"
+            android:id="@+id/hillfortImage1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/ic_launcher"/>
         <Button
-            android:id="@+id/chooseImage"
+            android:id="@+id/chooseImage1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
@@ -88,6 +83,11 @@
             android:text="@string/button_addImage"
             android:textColor="@color/colorPrimary"
             android:textSize="16sp"/>
+        <ImageView
+            android:id="@+id/hillfortImage2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/ic_launcher"/>
         <Button
             android:id="@+id/chooseImage2"
             android:layout_width="match_parent"
