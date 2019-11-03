@@ -16,6 +16,7 @@ class HillfortListActivity : AppCompatActivity(), HillfortListener {
 
   lateinit var app: MainApp
 
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_hillfort_list)
@@ -46,6 +47,11 @@ class HillfortListActivity : AppCompatActivity(), HillfortListener {
   override fun onOptionsItemSelected(item: MenuItem?): Boolean {
     when (item?.itemId) {
       R.id.item_add -> startActivityForResult<HillfortActivity>(0)
+    }
+    when (item?.itemId) {
+      R.id.scroll_up -> {
+        recyclerView.smoothScrollToPosition(0)
+      }
     }
     return super.onOptionsItemSelected(item)
   }
