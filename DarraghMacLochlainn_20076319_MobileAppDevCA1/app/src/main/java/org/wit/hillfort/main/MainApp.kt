@@ -10,6 +10,7 @@ class MainApp : Application(), AnkoLogger {
 
     lateinit var hillforts: HillfortStore
 
+
     override fun onCreate() {
         super.onCreate()
         hillforts = HillfortJSONStore(applicationContext)

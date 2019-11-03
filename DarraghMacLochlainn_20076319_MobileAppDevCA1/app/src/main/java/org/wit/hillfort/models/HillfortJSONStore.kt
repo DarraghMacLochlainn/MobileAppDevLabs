@@ -7,7 +7,6 @@ import com.google.gson.reflect.TypeToken
 import org.jetbrains.anko.AnkoLogger
 import org.wit.hillfort.helpers.*
 import java.util.*
-
 val JSON_FILE = "hillforts.json"
 val gsonBuilder = GsonBuilder().setPrettyPrinting().create()
 val listType = object : TypeToken<java.util.ArrayList<HillfortModel>>() {}.type
@@ -15,7 +14,6 @@ val listType = object : TypeToken<java.util.ArrayList<HillfortModel>>() {}.type
 fun generateRandomId(): Long {
     return Random().nextLong()
 }
-
 class HillfortJSONStore : HillfortStore, AnkoLogger {
 
     val context: Context

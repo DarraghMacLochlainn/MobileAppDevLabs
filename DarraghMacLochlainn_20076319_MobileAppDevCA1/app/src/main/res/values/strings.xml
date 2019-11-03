@@ -2,6 +2,7 @@
   <string name="app_name">Hillfort</string>
   <string name="hint_hillfortTitle">Hillfort Title</string>
   <string name="hint_hillfortDescription">Description </string>
+
   <string name="button_addHillfort">Add Hillfort</string>
   <string name="menu_addHillfort">Add</string>
   <string name="menu_cancelHillfort">Cancel</string>
@@ -13,4 +14,6 @@
   <string name="change_hillfort_image">Change hillfort image</string>
   <string name="button_location">Set Location</string>
     <string name="title_activity_map">Map</string>
+
+
 </resources>
