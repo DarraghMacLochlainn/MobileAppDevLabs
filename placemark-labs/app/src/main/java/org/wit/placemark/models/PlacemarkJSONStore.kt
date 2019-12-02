@@ -40,7 +40,8 @@ class PlacemarkJSONStore : PlacemarkStore, AnkoLogger {
 
 
     override fun update(placemark: PlacemarkModel) {
-        var foundPlacemark: PlacemarkModel? = placemarks.find { p -> p.id == placemark.id }
+        val placemarksList = findAll() as ArrayList<PlacemarkModel>
+        var foundPlacemark: PlacemarkModel? = placemarksList.find { p -> p.id == placemark.id }
         if (foundPlacemark != null) {
             foundPlacemark.title = placemark.title
             foundPlacemark.description = placemark.description
@@ -48,8 +49,8 @@ class PlacemarkJSONStore : PlacemarkStore, AnkoLogger {
             foundPlacemark.lat = placemark.lat
             foundPlacemark.lng = placemark.lng
             foundPlacemark.zoom = placemark.zoom
-            serialize()
         }
+        serialize()
     }
 
     override fun delete(placemark: PlacemarkModel) {
@@ -65,5 +66,10 @@ class PlacemarkJSONStore : PlacemarkStore, AnkoLogger {
     private fun deserialize() {
         val jsonString = read(context, JSON_FILE)
         placemarks = Gson().fromJson(jsonString, listType)
+    }
+
+    override fun findById(id:Long) : PlacemarkModel? {
+        val foundPlacemark: PlacemarkModel? = placemarks.find { it.id == id }
+        return foundPlacemark
     }
 }
