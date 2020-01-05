@@ -4,7 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context="org.wit.placemark.views.placemarklist.PlacemarkListView">
+  tools:context=".views.map.PlacemarkMapView">
 
   <com.google.android.material.appbar.AppBarLayout
     android:layout_width="match_parent"
@@ -21,14 +21,6 @@
       app:titleTextColor="@color/colorPrimary" />
   </com.google.android.material.appbar.AppBarLayout>
 
-  <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/recyclerView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:scrollbars="vertical"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+  <include layout="@layout/content_placemark_maps" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-
-
